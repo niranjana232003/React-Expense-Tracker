@@ -1,0 +1,148 @@
+/* Full-page bright modern background with gradient */
+.quote-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #fdfbfb, #ebedee, #e0f7fa);
+  font-family: "Poppins", sans-serif;
+}
+
+/* Floating gradient blobs for background aesthetics */
+.quote-page::before,
+.quote-page::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.6;
+  animation: float 12s infinite ease-in-out alternate;
+}
+
+.quote-page::before {
+  width: 350px;
+  height: 350px;
+  background: #c3a3f5;
+  top: -100px;
+  left: -120px;
+}
+
+.quote-page::after {
+  width: 300px;
+  height: 300px;
+  background: #8ec5fc;
+  bottom: -120px;
+  right: -100px;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(30px); }
+}
+
+/* Centered glass card */
+.quote-container {
+  background: #ffffffcc; 
+  backdrop-filter: blur(15px);
+  border-radius: 24px;
+  padding: 40px;
+  max-width: 520px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.12);
+  z-index: 2;
+  position: relative;
+  animation: fadeIn 1.2s ease;
+}
+
+/* Decorative emoji top corner */
+.quote-container::before {
+  content: "✨";
+  position: absolute;
+  font-size: 28px;
+  top: 18px;
+  left: 22px;
+}
+
+.quote-container::after {
+  content: "🌸";
+  position: absolute;
+  font-size: 28px;
+  bottom: 18px;
+  right: 22px;
+}
+
+/* Title with emoji */
+.quote-container h2 {
+  color: #3c1361;
+  font-size: 26px;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.quote-container h2::before {
+  content: "💭";
+  font-size: 24px;
+}
+
+/* Quote text with quote emoji */
+.quote-text {
+  font-size: 20px;
+  font-style: italic;
+  color: #333;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  animation: fadeIn 1s ease;
+  position: relative;
+}
+
+.quote-text::before {
+  content: "❝";
+  font-size: 28px;
+  position: absolute;
+  top: -10px;
+  left: -15px;
+  color: #8ec5fc;
+}
+
+.quote-text::after {
+  content: "❞";
+  font-size: 28px;
+  position: absolute;
+  bottom: -10px;
+  right: -15px;
+  color: #c28efc;
+}
+
+/* Fade in effect */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Modern button */
+button {
+  padding: 14px 24px;
+  border: none;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #8ec5fc, #e0c3fc);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 17px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
+button:hover {
+  background: linear-gradient(135deg, #6fa9f8, #c28efc);
+  transform: scale(1.07);
+  box-shadow: 0px 6px 16px rgba(0,0,0,0.15);
+}

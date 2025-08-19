@@ -1,0 +1,96 @@
+.add-transaction-container {
+    max-width: 450px;
+    margin: 50px auto;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.add-transaction-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333333;
+    font-weight: 600;
+}
+
+.transaction-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.transaction-type {
+    display: flex;
+    justify-content: space-evenly;
+    background: #f8f8f8;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.transaction-type label {
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+input[type="number"],
+select,
+textarea,
+input[type="date"] {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    background-color: #fafafa;
+}
+
+input[type="number"]:focus,
+select:focus,
+textarea:focus,
+input[type="date"]:focus {
+    border-color: #6a5acd;
+    box-shadow: 0px 0px 5px rgba(106, 90, 205, 0.4);
+    background-color: #ffffff;
+}
+
+select {
+    cursor: pointer;
+}
+
+textarea {
+    resize: none;
+    height: 80px;
+}
+
+button {
+    padding: 12px;
+    background: linear-gradient(135deg, #6a5acd, #8a2be2);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #5a4acb, #7a1ad2);
+    transform: scale(1.02);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+input[type="radio"] {
+    accent-color: #6a5acd;
+    transform: scale(1.1);
+    cursor: pointer;
+}

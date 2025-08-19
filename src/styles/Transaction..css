@@ -1,0 +1,87 @@
+.transactions-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.transactions-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.transactions-container table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+
+.transactions-container thead {
+  background: #4a90e2;
+  color: white;
+}
+
+.transactions-container th,
+.transactions-container td {
+  padding: 12px 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.transactions-container tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.transactions-container tr:hover {
+  background: #f1f7ff;
+  transition: 0.3s;
+}
+
+/* Income & Expense styling */
+.transactions-container td.income {
+  color: green;
+  font-weight: bold;
+}
+
+.transactions-container td.expense {
+  color: red;
+  font-weight: bold;
+}
+
+/* Buttons */
+.transactions-container .action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.transactions-container button {
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.transactions-container button.edit {
+  background: #ffc107;
+  color: #fff;
+}
+
+.transactions-container button.edit:hover {
+  background: #e0a800;
+}
+
+.transactions-container button.delete {
+  background: #dc3545;
+  color: #fff;
+}
+
+.transactions-container button.delete:hover {
+  background: #b52a37;
+}
