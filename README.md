@@ -2,15 +2,15 @@ Developed a dynamic, single-page Expense Tracker web application using ReactJS. 
 
 Tools & Technologies:
 
-ReactJS (Functional Components, Hooks)
-React Router DOM
-React Chart.js 2 / Chart.js
-JavaScript (ES6+), JSX, HTML5, CSS3
-Local Storage API
-Fetch API & Async/Await
-Git, GitHub for version control
-Vercel for cloud deployment
-React Icons for UI enhancement
+-ReactJS (Functional Components, Hooks)
+-React Router DOM
+-React Chart.js 2 / Chart.js
+-JavaScript (ES6+), JSX, HTML5, CSS3
+-Local Storage API
+-Fetch API & Async/Await
+-Git, GitHub for version control
+-Vercel for cloud deployment
+-React Icons for UI enhancement
 
 
 
