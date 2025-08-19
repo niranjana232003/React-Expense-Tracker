@@ -1,3 +1,25 @@
+Developed a dynamic, single-page Expense Tracker web application using ReactJS. Implemented core React concepts, including functional components, hooks (useState, useEffect), and React Router for seamless client-side navigation without page reloads. Designed reusable components for the dashboard, transactions, reports, and navigation bar to enhance modularity and maintainability. Managed state efficiently and persisted transaction data using browser local storage, eliminating the need for backend integration. Integrated form validation, dynamic filtering, and conditional rendering for improved UX. Incorporated data visualization with React Chart.js to display monthly expense breakdowns and income vs expenses. Enabled CRUD operations for transactions with edit and delete features, and implemented asynchronous API fetching to display motivational quotes. Successfully deployed the application on Vercel, ensuring a responsive and smooth user experience.
+
+Tools & Technologies:
+
+ReactJS (Functional Components, Hooks)
+React Router DOM
+React Chart.js 2 / Chart.js
+JavaScript (ES6+), JSX, HTML5, CSS3
+Local Storage API
+Fetch API & Async/Await
+Git, GitHub for version control
+Vercel for cloud deployment
+React Icons for UI enhancement
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
